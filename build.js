@@ -123,7 +123,7 @@ const esBuildPackage = async (file) => {
 		entryPoints: [file],
 		bundle: true,
 		platform: 'node',
-		target: 'node20',
+		target: 'node18',
 		allowOverwrite: true,
 		outfile: file
 	};
