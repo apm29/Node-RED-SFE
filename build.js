@@ -25,6 +25,38 @@ let isFlowBeingEmbedded = false;
 
 /* Things to not include during bundling */
 const externals = [
+	// s7 influx
+	'@ali-pay/node-red-contrib-s7',
+	'@influxdata/influxdb-client',
+	'@st-one-io',
+	'influx',
+	'iso-on-tcp',
+	'lodash',
+	'node-red-contrib-influxdb',
+	// yargs
+	"cliui",
+	"escalade",
+	"get-caller-file",
+	"require-directory",
+	"string-width",
+	"eastasianwidth",
+	"emoji-regex",
+	"strip-ansi",
+	"ansi-regex",
+	"y18n",
+	"yargs-parser",
+	"yargs",
+
+	//sharp
+	'sharp',
+	'@img/sharp-darwin-x64',
+	'@img/sharp-libvips-darwin-x64',
+	'@img/sharp-win32-ia32',
+	'@img/sharp-win32-x64',
+	'color',
+	'detect-libc',
+	'semver',
+	// base
 	'@node-red/nodes',
 	'@node-red/editor-client',
 	'@node-rs',

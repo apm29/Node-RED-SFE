@@ -12,21 +12,26 @@
 		"NodeJS"
 	],
 	"dependencies": {
+		"@ali-pay/node-red-contrib-s7": "^3.3.1",
 		"@yao-pkg/pkg": "^5.12.0",
 		"esbuild": "^0.23.0",
 		"node-red": "^4.0.2",
+		"node-red-contrib-influxdb": "^0.7.0",
+		"sharp": "^0.33.4",
 		"winston": "^3.13.1",
-		"winston-daily-rotate-file": "^5.0.0"
+		"winston-daily-rotate-file": "^5.0.0",
+		"yargs": "^17.7.2"
 	},
 	"devDependencies": {
 		"eslint": "^9.6.0",
 		"prettier": "^3.3.2",
-		"rimraf": "^6.0.1"
+		"rimraf": "^5.0.1"
 	},
 	"scripts": {
 		"develop": "node node-red.js --develop",
 		"build": "npm run-script clean && node build.js",
 		"clean": "rimraf ./build/",
-		"package": "cd ./build && pkg ./package.json --compress gzip -t host --targets node20 --output ./dist/node-red-sfe"
+		"package": "cd ./build && pkg ./package.json --compress gzip -t host --targets node18 --output ./dist/node-red-sfe",
+		"package:win": "cd ./build && pkg ./package.json --compress gzip -t win32 --targets node18 --output ./dist/node-red-sfe"
 	}
 }
