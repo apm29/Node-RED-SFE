@@ -157,7 +157,7 @@ const run = async () => {
 		plugins: [nativeNodeModulesPlugin],
 		bundle: true,
 		platform: 'node',
-		target: 'node20',
+		target: 'node18',
 		outfile: outputFile,
 		external: externals
 	};
