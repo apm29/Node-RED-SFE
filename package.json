@@ -15,7 +15,7 @@
 		"@ali-pay/node-red-contrib-s7": "^3.3.1",
 		"@yao-pkg/pkg": "^5.12.0",
 		"esbuild": "^0.23.0",
-		"node-red": "^4.0.2",
+		"node-red": "^3.1.11",
 		"node-red-contrib-influxdb": "^0.7.0",
 		"sharp": "^0.33.4",
 		"winston": "^3.13.1",

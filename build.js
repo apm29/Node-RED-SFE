@@ -62,7 +62,12 @@ const externals = [
 	'@node-rs',
 	'oauth2orize',
 	'got',
-	'./resources'
+	'./resources',
+
+	// Node-Red v3
+	'mock-aws-s3', 
+  'aws-sdk',
+  'nock',
 ];
 
 /* Native Binding Handling */
@@ -91,6 +96,7 @@ const nativeNodeModulesPlugin = {
 		opts.loader = opts.loader || {};
 		opts.loader['.node'] = 'file';
 		opts.loader['.sh'] = 'binary';
+		opts.loader['.html'] = 'file';
 	}
 };
 
